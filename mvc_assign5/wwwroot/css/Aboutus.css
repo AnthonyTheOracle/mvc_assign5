@@ -1,0 +1,101 @@
+body {
+    font-family: verdana;
+    background-image: url('img/Tobacco.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url('img/.png');
+    /*min-height: 380px;*/
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* The navbar */
+.onTopNav {
+    overflow: hidden;
+}
+
+    /* Navbar links */
+    .onTopNav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 10px 14px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .onTopNav a:hover {
+            background-color: #ddd;
+            color: white;
+        }
+
+        .onTopNav a.active {
+            color: white;
+        }
+
+    .onTopNav .icon {
+        display: none;
+    }
+
+
+.abtus h1 {
+    text-align: center;
+    padding: 15px;
+    color: #f2f2f2;
+}
+
+.member {
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.list1 {
+    margin-top: -21px;
+}
+
+    .list1 li {
+        line-height: 1.5em;
+        width: 100%;
+        overflow: hidden;
+        vertical-align: bottom;
+        padding-top: 21px;
+        color: #f2f2f2;
+    }
+
+        .list1 li img {
+            float: left;
+            margin: 3px 20px 0 0;
+        }
+
+        .list1 li a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .list1 li a:hover {
+                text-decoration: underline;
+            }
