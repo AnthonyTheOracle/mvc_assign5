@@ -18,13 +18,36 @@ namespace mvc_assign5.Controllers
         {
             context = ctx;
         }
-
+        public IActionResult Add()
+        {
+            ViewBag.Action = "Add";
+            return View("Edit", new State());
+        }
+        [HttpGet]
         public IActionResult Edit(int id)
         {
-            ViewBag.Action = "Save";
+            ViewBag.Action = "Edit";
             var state = context.States.Find(id);
 
             return View(state);
+        }
+        [HttpPost]
+        public IActionResult Edit(State state)
+        {
+            if (ModelState.IsValid)
+            {
+                if (state.StateID == 0)
+                    context.States.Add(state);
+                else
+                    context.States.Update(state);
+                context.SaveChanges();
+                return RedirectToAction("State", "Home");
+            }
+            else
+            {
+                ViewBag.Action = (state.StateID == 0) ? "Add" : "Edit";
+                return View(state);
+            }
         }
         public IActionResult Index()
         {
