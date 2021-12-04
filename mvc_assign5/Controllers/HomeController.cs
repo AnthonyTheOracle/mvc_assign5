@@ -78,7 +78,7 @@ namespace mvc_assign5.Controllers
             ViewBag.Action = "Settlement";
             //ViewBag.vAmount = 
             //List<Settlement> settlements = context.Settlements.OrderBy(s => s.vState).ToList();
-            var settlements = context.Settlements.Find(vState); //.OrderBy(s => s.vState).ToList();
+            var settlements = context.Settlements.OrderBy(s => s.vState).ToList();
             return View(settlements);
         }
         [HttpGet]
