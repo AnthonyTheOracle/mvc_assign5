@@ -18,6 +18,7 @@ namespace mvc_assign5.Controllers
         {
             context = ctx;
         }
+        [HttpGet]
         public IActionResult Add()
         {
             ViewBag.Action = "Add";
@@ -49,6 +50,20 @@ namespace mvc_assign5.Controllers
                 return View(state);
             }
         }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var state = context.States.Find(id);
+            return View(state);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(State state)
+        {
+            context.States.Remove(state);
+            context.SaveChanges();
+            return RedirectToAction("State", "Home");
+        }
         public IActionResult Index()
         {
             return View();
@@ -63,7 +78,7 @@ namespace mvc_assign5.Controllers
             ViewBag.Action = "Settlement";
             //ViewBag.vAmount = 
             //List<Settlement> settlements = context.Settlements.OrderBy(s => s.vState).ToList();
-            var settlements = context.Settlements.OrderBy(s => s.vState).ToList();
+            var settlements = context.Settlements.Find(vState); //.OrderBy(s => s.vState).ToList();
             return View(settlements);
         }
         [HttpGet]

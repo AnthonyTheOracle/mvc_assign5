@@ -91,7 +91,9 @@
                 <td>@state.vSource</td>
                 <th>
                     <a asp-controller="Home" asp-action="Settlement" asp-route-id="@state.vStateName">Select...</a>
-                    <a asp-controller="Home" asp-action="Edit" asp-route-id="@state.StateID">Edit...</a>
+                    <a asp-controller="Home" asp-action="Edit" asp-route-id="@state.StateID">  Edit...</a>
+                    <a asp-controller="Home" asp-action="Add" asp-route-id="0">  Add New...</a>
+                    <a asp-controller="Home" asp-action="Delete" asp-route-id="@state.StateID">  Delete...</a>
                 </th>
             </tr>
             }
