@@ -89,10 +89,10 @@
             @foreach (var state in Model)
             {
             <tr>
-                <td style="color:white">@state.vStateName</td>
-                <td style="color:white">@state.vYear</td>
-                <td style="color:white">@state.vSource</td>
-                <td style="color:white">
+                <td>@state.vStateName</td>
+                <td>@state.vYear</td>
+                <td>@state.vSource</td>
+                <td>
                     <a asp-controller="Home" asp-action="Settlement" asp-route-id="@state.vStateName">Select...</a>
                     <a asp-controller="Home" asp-action="Edit" asp-route-id="@state.StateID">  Edit...</a>
                     <a asp-controller="Home" asp-action="Add" asp-route-id="0">  Add New...</a>
