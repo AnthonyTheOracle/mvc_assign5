@@ -67,7 +67,7 @@
     <div class="bg-img">
         <div class="fade-in-text fade-out-text">
             <div style="text-align:center">
-                <p>
+                <p style="color:white">
                     In fiscal year 2020, states will collect $27.2 billion from tobacco taxes and settlements in court, but will only spend $740 million in the same year. That’s only 2.7% of it spent on programs that can stop young people from becoming smokers and help current smokers quit.                    <br /><br />
                     Learn more at <a href="https://www.cdc.gov/tobacco/">cdc.gov/tobacco</a>.
                 </p>
@@ -89,15 +89,15 @@
             @foreach (var state in Model)
             {
             <tr>
-                <td>@state.vStateName</td>
-                <td>@state.vYear</td>
-                <td>@state.vSource</td>
-                <th>
+                <td style="color:white">@state.vStateName</td>
+                <td style="color:white">@state.vYear</td>
+                <td style="color:white">@state.vSource</td>
+                <td style="color:white">
                     <a asp-controller="Home" asp-action="Settlement" asp-route-id="@state.vStateName">Select...</a>
                     <a asp-controller="Home" asp-action="Edit" asp-route-id="@state.StateID">  Edit...</a>
                     <a asp-controller="Home" asp-action="Add" asp-route-id="0">  Add New...</a>
                     <a asp-controller="Home" asp-action="Delete" asp-route-id="@state.StateID">  Delete...</a>
-                </th>
+                </td>
             </tr>
             }
         </tbody>

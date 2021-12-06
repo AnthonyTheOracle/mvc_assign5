@@ -68,9 +68,10 @@
         <div class="bg-img">
             <div class="fade-in-text fade-out-text">
                 <div style="text-align:center">
-                    <p>
-                        In fiscal year 2020, states will collect $27.2 billion from tobacco taxes and settlements in court, but will only spend $740 million in the same year. That’s only 2.7% of it spent on programs that can stop young people from becoming smokers and help current smokers quit.                    <br /><br />
-                        Learn more at <a href="https://www.cdc.gov/tobacco/">cdc.gov/tobacco</a>.
+                    <p style="color:red"><b>
+    In fiscal year 2020, states will collect $27.2 billion from tobacco taxes and settlements in court, but will only spend $740 million in the same year. That’s only 2.7% of it spent on programs that can stop young people from becoming smokers and help current smokers quit.                    <br /><br />
+    Learn more at <a href="https://www.cdc.gov/tobacco/">cdc.gov/tobacco</a>.
+</b>
                     </p>
                 </div>
             </div>
@@ -93,13 +94,13 @@
                 @foreach (var settlement in Model)
                 {
                     <tr>
-                        <td>@settlement.vState</td>
-                        <td>@settlement.vYear</td>
-                        <td>@settlement.vTopic</td>
-                        <td>@settlement.vIndicator</td>
-                        <td>@settlement.vSubMeasure</td>
-                        <td>@string.Format("{0:C}",settlement.vAmount)</td>
-                        <td>@settlement.vSource</td>
+                        <td style="color:white">@settlement.vState</td>
+                        <td style="color:white">@settlement.vYear</td>
+                        <td style="color:white">@settlement.vTopic</td>
+                        <td style="color:white">@settlement.vIndicator</td>
+                        <ttd style="color:white">@settlement.vSubMeasure</ttd>
+                        <td style="color:white">@string.Format("{0:C}",settlement.vAmount)</td>
+                        <td style="color:white">@settlement.vSource</td>
                     </tr>
                 }
             </tbody>
