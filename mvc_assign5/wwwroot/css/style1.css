@@ -2,7 +2,7 @@
 
 body {
     font-family: verdana;
-    background-image: url('~/img/Tobacco.jpg');
+    background-image: url("/img/Tobacco.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -79,7 +79,7 @@ body {
     }
 }
 .cigar-bg-image {
-    background-image: url('~/img/Smoking.jpg');
+    background-image: url("/img/Smoking.jpg");
 }
 .bg-img {
     /* The image used */
@@ -87,7 +87,7 @@ body {
     background-image: url('~/img/cig.jpg');
     background-image: url('~/img/addict.jpg');
     background-image: url('https://i.makeagif.com/media/2-06-2016/Vd6AO9.gif');*/
-    background-image: url('~/img/Smoking.jpg');
+    background-image: url("/img/Smoking.jpg");
     /*min-height: 380px;*/
     min-height: 380px;
     /* Center and scale the image nicely */

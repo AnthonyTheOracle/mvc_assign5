@@ -5,7 +5,90 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Settlement\**" />
+    <Content Remove="Views\Settlement\**" />
+    <EmbeddedResource Remove="Views\Settlement\**" />
+    <None Remove="Views\Settlement\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\css\style1.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="StaticFiles\img\addict.jpg" />
+    <None Remove="StaticFiles\img\Anthony_McCofie.jpg" />
+    <None Remove="StaticFiles\img\cig.jpg" />
+    <None Remove="StaticFiles\img\cigarettes.jpg" />
+    <None Remove="StaticFiles\img\DataModel.png" />
+    <None Remove="StaticFiles\img\Devesh.jpeg" />
+    <None Remove="StaticFiles\img\Mariah.jpg" />
+    <None Remove="StaticFiles\img\Picture.PNG" />
+    <None Remove="StaticFiles\img\quitting.jpg" />
+    <None Remove="StaticFiles\img\settlement-bkg1.png" />
+    <None Remove="StaticFiles\img\Smoking.jpg" />
+    <None Remove="StaticFiles\img\Tobacco.jpg" />
+    <None Remove="StaticFiles\img\usf.png" />
+    <None Remove="StaticFiles\img\Vd6AO9.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="StaticFiles\img\addict.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Anthony_McCofie.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\cig.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\cigarettes.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\DataModel.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Devesh.jpeg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Mariah.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Picture.PNG">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\quitting.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\settlement-bkg1.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Smoking.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Tobacco.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\usf.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="StaticFiles\img\Vd6AO9.gif">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -18,11 +101,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Collections" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Settlement\" />
   </ItemGroup>
 
 </Project>
